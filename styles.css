@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(to right, #8e44ad, #3498db);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #503366; /* Cor do texto */
+}
+
+.input-task {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.button-add-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button-add-task:hover {
+    background-color: #2980b9;
+}
+
+.button-add-task:active {
+    background-color: #1f6391;
+}
+
+.list-tasks {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.task {
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task:hover {
+    background-color: #f1f1f1;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+}
+
+.task-text {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.task-time {
+    font-size: 12px;
+    color: #888;
+}
+
+img {
+    height: 20px;
+    cursor: pointer;
+}
+
+.done {
+    background-color: #d5e8d4; /* Cor de fundo para tarefas concluídas */
+    text-decoration: line-through;
+    color: #4caf50;
+}
+
+.edit-task {
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px; /* Espaço entre o ícone de editar e o de deletar */
+}
